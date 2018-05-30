@@ -4,10 +4,15 @@ node1 = tf.constant(3.0, dtype = tf.float32)  # 3.0
 node11 = tf.constant([1.0, 2.0, 3.0], dtype = tf.float32)
 node111 = tf.constant([[1.0, 2.0, 3.0], [1.0, 2.0, 3.0]], dtype = tf.float32)
 node2 = tf.constant(4.0)  # also tf.float32 implicitly
-print(node1, node2)
+# print(node1, node2)
+print(tf.Session().run([node1, node2]))
+
 
 # print('node1 shape = ',node1.shape())
 # print('node11 shape = ',node11.shape())
+
+
+
 
 
 b = tf.Variable(tf.zeros([100]))

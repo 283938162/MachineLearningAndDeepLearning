@@ -1,17 +1,27 @@
 import numpy as np
 
+"""
+np.newaxis
+"""
+
+x_data = np.linspace(0, 9, 10)  # ndarray
+print('x_data = \n', x_data)
+
+print('x_data[:,np.newaxis] = \n', x_data[:, np.newaxis])
+print('x_data[np.newaxis,:] = \n', x_data[np.newaxis, :])
+
 # log
 # 自然对数  e 为底  numpy的使用 np.e 表示e
-online_times = [(22, np.e * np.e - 1), (12, np.e * np.e * np.e - 1)]
-real_X = np.array(online_times)
-print(real_X)
-
-x = real_X[:,1:]
-print(x)
-
-
-xx = np.log(1+x)
-print(xx)
+# online_times = [(22, np.e * np.e - 1), (12, np.e * np.e * np.e - 1)]
+# real_X = np.array(online_times)
+# print(real_X)
+#
+# x = real_X[:,1:]
+# print(x)
+#
+#
+# xx = np.log(1+x)
+# print(xx)
 #
 # online_times =  [(22, 1558), (12, 40261)]
 #
