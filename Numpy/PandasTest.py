@@ -383,7 +383,26 @@ print(age_group_survival)
 
 
 
+# pandas 两种数据结构 一种dataframe结构 另外一种是Series结构 上面讲的都是
+# 是df结构  下面是series
 
+#Series (collection of values) 对DF的分解 DF的一行或者一列就是一个Series结构
+#DataFrame (collection of Series objects) DF是由一些列的series组成的
+#Panel (collection of DataFrame objects)
+
+
+fandango = pd.read_csv("../zData/fandango_scores.csv")
+series_film = fandango['FILM']
+print(type(series_film))  # 取的这一列的数据结构称之为 series
+print(series_film[0:5]) # 取前5
+
+file_names = series_film.values
+print(type(file_names))  # <class 'numpy.ndarray'>
+print(file_names) # ndarray结构
+
+
+# DF由series组成 series又是由ndarray构成 可见DF是做的一个封装
+# 还可以指定所以 默认所以都是index 可以指定str类型的做索引
 
 
 

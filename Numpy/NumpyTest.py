@@ -6,9 +6,9 @@ import numpy as np
 # 一维向量 二维矩阵 多维张量
 # 数组 集合
 # The numpy.array() function can take a list or list of lists as input. When we input a list, we get a one-dimensional array as a result
-vector = np.array([1, 2, 3, 4])
+vector = np.array([1, 2, 3, 4]) # []为啥存在 语法意义是 array() 参数是一个list
 print("------------------------------")
-# Numpy 值判断
+# Numpy 值判断 ==
 # it will compare the second value to each element in the vector\n
 # If the values are equal, the Python interpreter returns True; otherwise, it returns False
 
@@ -90,7 +90,8 @@ print(a.dtype.name)
 print(a.size)
 
 # np.zeros 初始化一个空矩阵
-# 对于二维矩阵 zeros参数是一个元组 如果没有指定类型,默认是float类型的
+# 对于二维矩阵 zeros参数是一个元组 如果没有指定类型,默认是float类型的'
+# 无论是zeros还是ones random 参数都是元组  代表每一个维度
 print(np.zeros((3, 4)))
 
 # np.ones 构造单位矩阵 并指定元素类型
@@ -108,7 +109,6 @@ print(np.arange(1, 2, 0.2))
 print(np.random.random((2, 3)))  # 2行3列的矩阵
 
 # np.linspace    np.linspace(start,end,nums)  在start和end区间 平均取nums个值
-
 print(np.linspace(0, 10, 10))
 
 # Numpy arrays 数学运算
