@@ -343,5 +343,3 @@ print("accuracy = {0}%".format(accuracy))
 
 
 
-
-
